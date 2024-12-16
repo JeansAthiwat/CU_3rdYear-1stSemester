@@ -1,0 +1,13 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+C:/Awork/y3s1/HWSynLab/Lab01/Lab02/Lab02.srcs/sources_1/new/clockDiv.v,1724731518,verilog,,C:/Awork/y3s1/HWSynLab/Lab01/project_3/project_3.srcs/sources_1/new/dFlipflop.v,,clockDiv,,,,,,,,
+C:/Awork/y3s1/HWSynLab/Lab01/Lab02/Lab02.srcs/sources_1/new/quadSevenSeg.v,1724741230,verilog,,C:/Awork/y3s1/HWSynLab/Lab01/Lab02/Lab02.srcs/sources_1/new/segmentDecoder.v,,quadSevenSeg,,,,,,,,
+C:/Awork/y3s1/HWSynLab/Lab01/Lab02/Lab02.srcs/sources_1/new/segmentDecoder.v,1724729143,verilog,,C:/Awork/y3s1/HWSynLab/Lab01/project_3/project_3.srcs/sources_1/new/singlePulser.v,,hexTo7Segment,,,,,,,,
+C:/Awork/y3s1/HWSynLab/Lab01/Lab02/Lab02.srcs/sources_1/new/system.v,1725954326,verilog,,,,system,,,,,,,,
+C:/Awork/y3s1/HWSynLab/Lab01/project_3/project_3.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+,,,,,,testPulser,,,,,,,,
+C:/Awork/y3s1/HWSynLab/Lab01/project_3/project_3.srcs/sources_1/new/BCDCounter.v,1725954720,verilog,,C:/Awork/y3s1/HWSynLab/Lab01/project_3/project_3.srcs/sources_1/new/singlePulser.v,,BCDCounter,,,,,,,,
+C:/Awork/y3s1/HWSynLab/Lab01/project_3/project_3.srcs/sources_1/new/dFlipflop.v,1725954310,verilog,,C:/Awork/y3s1/HWSynLab/Lab01/Lab02/Lab02.srcs/sources_1/new/quadSevenSeg.v,,dFlipflop,,,,,,,,
+C:/Awork/y3s1/HWSynLab/Lab01/project_3/project_3.srcs/sources_1/new/singlePulser.v,1725954676,verilog,,C:/Awork/y3s1/HWSynLab/Lab01/project_3/project_3.srcs/sim_1/new/testPulserandBCD.v,,singlePulser,,,,,,,,

@@ -1,0 +1,1 @@
+db.product.find({product_color: /white/i}).projection({product_id: 1,product_name:1,product_color:1,_id:0}).sort({product_id:1})

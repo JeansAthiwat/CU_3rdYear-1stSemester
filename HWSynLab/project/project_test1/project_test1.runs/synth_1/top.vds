@@ -1,0 +1,612 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Wed Dec  4 14:01:26 2024
+# Process ID: 20616
+# Current directory: C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.runs/synth_1/top.vds
+# Journal file: C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.runs/synth_1\vivado.jou
+# Running On        :Jeans
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :AMD Ryzen 5 5600H with Radeon Graphics         
+# CPU Frequency     :3294 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :16487 MB
+# Swap memory       :1207 MB
+# Total Virtual     :17695 MB
+# Available Virtual :4442 MB
+#-----------------------------------------------------------
+source top.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 486.297 ; gain = 200.723
+Command: read_checkpoint -auto_incremental -incremental C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Device 21-9227] Part: xc7a35tcpg236-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19764
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1342.086 ; gain = 448.594
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-10929] literal value 'b0000011000000000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:31]
+WARNING: [Synth 8-10929] literal value 'b0000011100000000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:32]
+WARNING: [Synth 8-10929] literal value 'b0000010100000000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:33]
+WARNING: [Synth 8-10929] literal value 'b0000100100000000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:34]
+WARNING: [Synth 8-10929] literal value 'b0000100110000000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:35]
+WARNING: [Synth 8-10929] literal value 'b0000100010000000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:36]
+WARNING: [Synth 8-10929] literal value 'b0001100010000000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:37]
+WARNING: [Synth 8-10929] literal value 'h4110 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:38]
+WARNING: [Synth 8-10929] literal value 'b0001000011000000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:38]
+WARNING: [Synth 8-10929] literal value 'h4111 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:39]
+WARNING: [Synth 8-10929] literal value 'b0011111111000000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:39]
+WARNING: [Synth 8-10929] literal value 'h4112 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:40]
+WARNING: [Synth 8-10929] literal value 'b0011111111100000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:40]
+WARNING: [Synth 8-10929] literal value 'h4113 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:41]
+WARNING: [Synth 8-10929] literal value 'b0010000000100000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:41]
+WARNING: [Synth 8-10929] literal value 'h4114 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:42]
+WARNING: [Synth 8-10929] literal value 'b0110000000100000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:42]
+WARNING: [Synth 8-10929] literal value 'h4115 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:43]
+WARNING: [Synth 8-10929] literal value 'b0100000000110000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:43]
+WARNING: [Synth 8-10929] literal value 'h4116 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:44]
+WARNING: [Synth 8-10929] literal value 'h4117 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:45]
+WARNING: [Synth 8-10929] literal value 'h4118 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:46]
+WARNING: [Synth 8-10929] literal value 'h4119 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:47]
+WARNING: [Synth 8-10929] literal value 'h411a truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:48]
+WARNING: [Synth 8-10929] literal value 'h411b truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:49]
+WARNING: [Synth 8-10929] literal value 'h411c truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:50]
+WARNING: [Synth 8-10929] literal value 'h411d truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:51]
+WARNING: [Synth 8-10929] literal value 'h411e truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:52]
+WARNING: [Synth 8-10929] literal value 'h411f truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:53]
+WARNING: [Synth 8-10929] literal value 'b0011111000000000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:65]
+WARNING: [Synth 8-10929] literal value 'b0011111111000000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:66]
+WARNING: [Synth 8-10929] literal value 'b0010000001100000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:67]
+WARNING: [Synth 8-10929] literal value 'b0010000001100000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:68]
+WARNING: [Synth 8-10929] literal value 'b0010000001000000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:69]
+WARNING: [Synth 8-10929] literal value 'b0011111110000000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:70]
+WARNING: [Synth 8-10929] literal value 'b0011111111000000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:71]
+WARNING: [Synth 8-10929] literal value 'h4210 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:72]
+WARNING: [Synth 8-10929] literal value 'b0010000001100000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:72]
+WARNING: [Synth 8-10929] literal value 'h4211 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:73]
+WARNING: [Synth 8-10929] literal value 'b0010000000100000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:73]
+WARNING: [Synth 8-10929] literal value 'h4212 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:74]
+WARNING: [Synth 8-10929] literal value 'b0010000000100000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:74]
+WARNING: [Synth 8-10929] literal value 'h4213 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:75]
+WARNING: [Synth 8-10929] literal value 'b0010000001100000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:75]
+WARNING: [Synth 8-10929] literal value 'h4214 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:76]
+WARNING: [Synth 8-10929] literal value 'b0011111111000000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:76]
+WARNING: [Synth 8-10929] literal value 'h4215 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:77]
+WARNING: [Synth 8-10929] literal value 'b0011111000000000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:77]
+WARNING: [Synth 8-10929] literal value 'h4216 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:78]
+WARNING: [Synth 8-10929] literal value 'h4217 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:79]
+WARNING: [Synth 8-10929] literal value 'h4218 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:80]
+WARNING: [Synth 8-10929] literal value 'h4219 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:81]
+WARNING: [Synth 8-10929] literal value 'h421a truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:82]
+WARNING: [Synth 8-10929] literal value 'h421b truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:83]
+WARNING: [Synth 8-10929] literal value 'h421c truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:84]
+WARNING: [Synth 8-10929] literal value 'h421d truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:85]
+WARNING: [Synth 8-10929] literal value 'h421e truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:86]
+WARNING: [Synth 8-10929] literal value 'h421f truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:87]
+WARNING: [Synth 8-10929] literal value 'b0000111111000000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:99]
+WARNING: [Synth 8-10929] literal value 'b0001000000000000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:100]
+WARNING: [Synth 8-10929] literal value 'b0010000000000000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:101]
+WARNING: [Synth 8-10929] literal value 'b0010000000000000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:102]
+WARNING: [Synth 8-10929] literal value 'b0110000000000000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:103]
+WARNING: [Synth 8-10929] literal value 'b0110000000000000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:104]
+WARNING: [Synth 8-10929] literal value 'b0110000000000000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:105]
+WARNING: [Synth 8-10929] literal value 'h4310 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:106]
+WARNING: [Synth 8-10929] literal value 'b0110000000000000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:106]
+WARNING: [Synth 8-10929] literal value 'h4311 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:107]
+WARNING: [Synth 8-10929] literal value 'b0010000000000000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:107]
+WARNING: [Synth 8-10929] literal value 'h4312 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:108]
+WARNING: [Synth 8-10929] literal value 'b0010000000000000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:108]
+WARNING: [Synth 8-10929] literal value 'h4313 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:109]
+WARNING: [Synth 8-10929] literal value 'b0001000000000000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:109]
+WARNING: [Synth 8-10929] literal value 'h4314 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:110]
+WARNING: [Synth 8-10929] literal value 'b0000111111000000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:110]
+WARNING: [Synth 8-10929] literal value 'h4315 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:111]
+WARNING: [Synth 8-10929] literal value 'h4316 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:112]
+WARNING: [Synth 8-10929] literal value 'h4317 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:113]
+WARNING: [Synth 8-10929] literal value 'h4318 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:114]
+WARNING: [Synth 8-10929] literal value 'h4319 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:115]
+WARNING: [Synth 8-10929] literal value 'h431a truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:116]
+WARNING: [Synth 8-10929] literal value 'h431b truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:117]
+WARNING: [Synth 8-10929] literal value 'h431c truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:118]
+WARNING: [Synth 8-10929] literal value 'h431d truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:119]
+WARNING: [Synth 8-10929] literal value 'h431e truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:120]
+WARNING: [Synth 8-10929] literal value 'h431f truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:121]
+WARNING: [Synth 8-10929] literal value 'b0011100000000000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:133]
+WARNING: [Synth 8-10929] literal value 'b0011111110000000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:134]
+WARNING: [Synth 8-10929] literal value 'b0011000001100000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:135]
+WARNING: [Synth 8-10929] literal value 'b0011000000100000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:136]
+WARNING: [Synth 8-10929] literal value 'b0011000000110000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:137]
+WARNING: [Synth 8-10929] literal value 'b0011000000110000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:138]
+WARNING: [Synth 8-10929] literal value 'b0011000000110000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:139]
+WARNING: [Synth 8-10929] literal value 'h4410 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:140]
+WARNING: [Synth 8-10929] literal value 'b0011000000110000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:140]
+WARNING: [Synth 8-10929] literal value 'h4411 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:141]
+WARNING: [Synth 8-10929] literal value 'b0011000000110000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:141]
+WARNING: [Synth 8-10929] literal value 'h4412 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:142]
+WARNING: [Synth 8-10929] literal value 'b0011000000100000 truncated to fit in 8 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:142]
+WARNING: [Synth 8-10929] literal value 'h4413 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:143]
+INFO: [Common 17-14] Message 'Synth 8-10929' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/vga_controller.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/vga_controller.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ascii_test' [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_test.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ascii_rom' [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:5]
+WARNING: [Synth 8-151] case item 11'b10000010000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10000010001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10000010010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10000010011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10000010100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10000010101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10000010110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10000010111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10000011000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10000011001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10000011010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10000011011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10000011100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10000011101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10000011110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10000011111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b00100010000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b00100010001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b00100010010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b00100010011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b00100010100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b00100010101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b00100010110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b00100010111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b00100011000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b00100011001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b00100011010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b00100011011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b00100011100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b00100011101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b00100011110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b00100011111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01000010000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01000010001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01000010010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01000010011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01000010100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01000010101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01000010110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01000010111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01000011000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01000011001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01000011010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01000011011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01000011100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01000011101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01000011110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01000011111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01100010000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01100010001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01100010010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01100010011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01100010100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01100010101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01100010110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01100010111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01100011000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01100011001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01100011010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01100011011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01100011100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01100011101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01100011110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b01100011111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10000010000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10000010001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10000010010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10000010011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10000010100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10000010101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10000010110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10000010111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10000011000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10000011001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10000011010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10000011011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10000011100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10000011101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10000011110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10000011111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10100010000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10100010001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10100010010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10100010011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10100010100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10100010101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10100010110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10100010111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10100011000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10100011001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10100011010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10100011011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10100011100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10100011101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10100011110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b10100011111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b11000010000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b11000010001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b11000010010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+WARNING: [Synth 8-151] case item 11'b11000010011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:19]
+INFO: [Common 17-14] Message 'Synth 8-151' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'ascii_rom' (0#1) [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_rom.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ascii_test' (0#1) [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/ascii_test.v:3]
+WARNING: [Synth 8-7071] port 'reset' of module 'ascii_test' is unconnected for instance 'at' [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/top.v:42]
+WARNING: [Synth 8-7023] instance 'at' of module 'ascii_test' has 8 connections declared, but only 7 given [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/top.v:42]
+INFO: [Synth 8-6157] synthesizing module 'uart' [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/uart.v:22]
+INFO: [Synth 8-6157] synthesizing module 'baudrate_gen' [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/baudrate_gen.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'baudrate_gen' (0#1) [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/baudrate_gen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/uart_rx.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/uart_rx.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (0#1) [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/uart_rx.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/uart_tx.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/uart_tx.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (0#1) [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/uart_tx.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'uart' (0#1) [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/uart.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/top.v:3]
+WARNING: [Synth 8-3848] Net seg in module/entity top does not have driver. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/top.v:15]
+WARNING: [Synth 8-3848] Net dp in module/entity top does not have driver. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/top.v:16]
+WARNING: [Synth 8-3848] Net an in module/entity top does not have driver. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/sources_1/imports/new/top.v:17]
+WARNING: [Synth 8-7129] Port reset in module ascii_test is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[7] in module ascii_test is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seg[6] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seg[5] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seg[4] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seg[3] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seg[2] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seg[1] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seg[0] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dp in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port an[3] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port an[2] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port an[1] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port an[0] in module top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1474.105 ; gain = 580.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1474.105 ; gain = 580.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1474.105 ; gain = 580.613
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1474.105 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja3'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:166]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:166]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja3'. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:167]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc:167]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.srcs/constrs_1/imports/new/constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1572.438 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1572.438 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1572.438 ; gain = 678.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1572.438 ; gain = 678.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1572.438 ; gain = 678.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 1572.438 ; gain = 678.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 4     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 4     
+	                8 Bit    Registers := 8     
+	                7 Bit    Registers := 128   
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 22    
++---Muxes : 
+	   3 Input   11 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port reset in module ascii_test is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[7] in module ascii_test is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seg[6] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seg[5] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seg[4] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seg[3] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seg[2] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seg[1] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seg[0] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dp in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port an[3] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port an[2] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port an[1] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port an[0] in module top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 1572.438 ; gain = 678.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1572.438 ; gain = 678.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 1572.438 ; gain = 678.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:36 . Memory (MB): peak = 1572.438 ; gain = 678.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:41 . Memory (MB): peak = 1572.438 ; gain = 678.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:41 . Memory (MB): peak = 1572.438 ; gain = 678.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:41 . Memory (MB): peak = 1572.438 ; gain = 678.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:41 . Memory (MB): peak = 1572.438 ; gain = 678.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:41 . Memory (MB): peak = 1572.438 ; gain = 678.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:41 . Memory (MB): peak = 1572.438 ; gain = 678.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     4|
+|2     |CARRY4 |    32|
+|3     |LUT1   |    13|
+|4     |LUT2   |    71|
+|5     |LUT3   |    37|
+|6     |LUT4   |    40|
+|7     |LUT5   |   184|
+|8     |LUT6   |   426|
+|9     |MUXF7  |   110|
+|10    |MUXF8  |     9|
+|11    |FDCE   |    47|
+|12    |FDRE   |  1056|
+|13    |FDSE   |     6|
+|14    |IBUF   |    13|
+|15    |OBUF   |    16|
+|16    |OBUFT  |    12|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:41 . Memory (MB): peak = 1572.438 ; gain = 678.945
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:39 . Memory (MB): peak = 1572.438 ; gain = 580.613
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:41 . Memory (MB): peak = 1572.438 ; gain = 678.945
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1572.438 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 151 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1572.438 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 6092b7fd
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 268 Warnings, 34 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:47 . Memory (MB): peak = 1572.438 ; gain = 1079.383
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1572.438 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Awork/y3s1/HWSynLab/project/project_test1/project_test1.runs/synth_1/top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  4 14:02:26 2024...

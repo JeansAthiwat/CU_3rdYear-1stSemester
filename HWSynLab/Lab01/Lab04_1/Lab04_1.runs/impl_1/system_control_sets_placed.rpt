@@ -1,0 +1,354 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Tue Sep 17 13:59:05 2024
+| Host         : Jeans running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file system_control_sets_placed.rpt
+| Design       : system
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   276 |
+|    Minimum number of control sets                        |   276 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   600 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   276 |
+| >= 0 to < 4        |    21 |
+| >= 4 to < 6        |    48 |
+| >= 6 to < 8        |   176 |
+| >= 8 to < 10       |    30 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             538 |          258 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             270 |          105 |
+| Yes          | No                    | No                     |              18 |            9 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1294 |          448 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------+---------------------------------+---------------------------+------------------+----------------+--------------+
+|          Clock Signal          |          Enable Signal          |      Set/Reset Signal     | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------------------------+---------------------------------+---------------------------+------------------+----------------+--------------+
+|  genblk1[4].fDiv/clkDiv_reg_0  |                                 |                           |                1 |              1 |         1.00 |
+|  genblk1[0].fDiv/clkDiv_reg_0  |                                 |                           |                1 |              1 |         1.00 |
+|  genblk1[5].fDiv/clkDiv_reg_0  |                                 |                           |                1 |              1 |         1.00 |
+|  genblk1[2].fDiv/clkDiv_reg_0  |                                 |                           |                1 |              1 |         1.00 |
+|  genblk1[10].fDiv/clkDiv_reg_0 |                                 |                           |                1 |              1 |         1.00 |
+|  genblk1[3].fDiv/clkDiv_reg_0  |                                 |                           |                1 |              1 |         1.00 |
+|  genblk1[11].fDiv/clkDiv_reg_0 |                                 |                           |                1 |              1 |         1.00 |
+|  genblk1[13].fDiv/clkDiv_reg_0 |                                 |                           |                1 |              1 |         1.00 |
+|  genblk1[12].fDiv/clkDiv_reg_0 |                                 |                           |                1 |              1 |         1.00 |
+|  genblk1[8].fDiv/clkDiv_reg_0  |                                 |                           |                1 |              1 |         1.00 |
+|  genblk1[9].fDiv/clkDiv_reg_0  |                                 |                           |                1 |              1 |         1.00 |
+|  genblk1[7].fDiv/clkDiv_reg_0  |                                 |                           |                1 |              1 |         1.00 |
+|  genblk1[6].fDiv/clkDiv_reg_0  |                                 |                           |                1 |              1 |         1.00 |
+|  genblk1[16].fDiv/clkDiv_reg_0 |                                 |                           |                1 |              1 |         1.00 |
+|  genblk1[1].fDiv/clkDiv_reg_0  |                                 |                           |                1 |              1 |         1.00 |
+|  genblk1[17].fDiv/clkDiv_reg_0 |                                 |                           |                1 |              1 |         1.00 |
+|  genblk1[15].fDiv/clkDiv_reg_0 |                                 |                           |                1 |              1 |         1.00 |
+|  genblk1[14].fDiv/clkDiv_reg_0 |                                 |                           |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                 |                                 |                           |                1 |              1 |         1.00 |
+|  targetClk_BUFG                | nolabel_line61/state_i_1__1_n_0 |                           |                1 |              1 |         1.00 |
+|  targetClk_BUFG                | nolabel_line60/state_i_1__0_n_0 |                           |                1 |              1 |         1.00 |
+|  targetClk_BUFG                |                                 | stack/mem[110][7]_i_1_n_0 |                4 |              4 |         1.00 |
+|  targetClk_BUFG                | stack/mem[206][6]_i_1_n_0       | stack/mem[206][7]_i_1_n_0 |                1 |              4 |         4.00 |
+|  targetClk_BUFG                | stack/mem[62][6]_i_1_n_0        | stack/mem[62][7]_i_1_n_0  |                1 |              4 |         4.00 |
+|  targetClk_BUFG                |                                 | stack/mem[206][7]_i_1_n_0 |                2 |              4 |         2.00 |
+|  targetClk_BUFG                | stack/mem[95][6]_i_1_n_0        | stack/mem[95][7]_i_1_n_0  |                1 |              4 |         4.00 |
+|  targetClk_BUFG                | stack/mem[47][6]_i_1_n_0        | stack/mem[47][7]_i_1_n_0  |                1 |              4 |         4.00 |
+|  targetClk_BUFG                |                                 | stack/mem[38][4]_i_1_n_0  |                2 |              4 |         2.00 |
+|  targetClk_BUFG                | stack/mem[38][7]_i_1_n_0        | stack/mem[38][4]_i_1_n_0  |                2 |              4 |         2.00 |
+|  targetClk_BUFG                |                                 | stack/mem[47][7]_i_1_n_0  |                1 |              4 |         4.00 |
+|  targetClk_BUFG                |                                 | stack/mem[62][7]_i_1_n_0  |                2 |              4 |         2.00 |
+|  targetClk_BUFG                | stack/mem[118][6]_i_1_n_0       | stack/mem[118][7]_i_1_n_0 |                1 |              4 |         4.00 |
+|  targetClk_BUFG                |                                 | stack/mem[95][7]_i_1_n_0  |                3 |              4 |         1.33 |
+|  targetClk_BUFG                | stack/mem[127][6]_i_1_n_0       | stack/addr[7]_i_1_n_0     |                1 |              4 |         4.00 |
+|  targetClk_BUFG                |                                 | stack/mem[118][7]_i_1_n_0 |                3 |              4 |         1.33 |
+|  targetClk_BUFG                | stack/mem[110][6]_i_1_n_0       | stack/mem[110][7]_i_1_n_0 |                1 |              4 |         4.00 |
+|  targetClk_BUFG                | stack/mem[109][6]_i_2_n_0       | stack/mem[109][6]_i_1_n_0 |                1 |              5 |         5.00 |
+|  targetClk_BUFG                | stack/mem[114][6]_i_2_n_0       | stack/mem[114][6]_i_1_n_0 |                1 |              5 |         5.00 |
+|  targetClk_BUFG                | stack/mem[194][6]_i_2_n_0       | stack/mem[194][6]_i_1_n_0 |                2 |              5 |         2.50 |
+|  targetClk_BUFG                | stack/mem[142][7]_i_2_n_0       | stack/mem[142][7]_i_1_n_0 |                1 |              5 |         5.00 |
+|  targetClk_BUFG                | stack/mem[253][7]_i_2_n_0       | stack/mem[253][7]_i_1_n_0 |                1 |              5 |         5.00 |
+|  targetClk_BUFG                | stack/mem[99][6]_i_2_n_0        | stack/mem[99][6]_i_1_n_0  |                2 |              5 |         2.50 |
+|  targetClk_BUFG                | stack/mem[98][6]_i_2_n_0        | stack/mem[98][6]_i_1_n_0  |                2 |              5 |         2.50 |
+|  targetClk_BUFG                | stack/mem[214][6]_i_2_n_0       | stack/mem[214][6]_i_1_n_0 |                1 |              5 |         5.00 |
+|  targetClk_BUFG                | stack/mem[82][6]_i_2_n_0        | stack/mem[82][6]_i_1_n_0  |                1 |              5 |         5.00 |
+|  targetClk_BUFG                | stack/mem[77][6]_i_2_n_0        | stack/mem[77][6]_i_1_n_0  |                1 |              5 |         5.00 |
+|  targetClk_BUFG                | stack/mem[159][6]_i_2_n_0       | stack/mem[159][6]_i_1_n_0 |                1 |              5 |         5.00 |
+|  targetClk_BUFG                | stack/mem[58][6]_i_2_n_0        | stack/mem[58][6]_i_1_n_0  |                4 |              5 |         1.25 |
+|  targetClk_BUFG                | stack/mem[123][6]_i_2_n_0       | stack/mem[123][6]_i_1_n_0 |                1 |              5 |         5.00 |
+|  targetClk_BUFG                | stack/mem[52][5]_i_2_n_0        | stack/mem[52][5]_i_1_n_0  |                1 |              5 |         5.00 |
+|  targetClk_BUFG                | stack/mem[163][6]_i_2_n_0       | stack/mem[163][6]_i_1_n_0 |                1 |              5 |         5.00 |
+|  targetClk_BUFG                | stack/mem[208][6]_i_2_n_0       | stack/mem[208][6]_i_1_n_0 |                1 |              5 |         5.00 |
+|  targetClk_BUFG                | stack/mem[33][6]_i_2_n_0        | stack/mem[33][6]_i_1_n_0  |                2 |              5 |         2.50 |
+|  targetClk_BUFG                | stack/mem[102][6]_i_2_n_0       | stack/mem[102][6]_i_1_n_0 |                1 |              5 |         5.00 |
+|  targetClk_BUFG                | stack/mem[106][6]_i_2_n_0       | stack/mem[106][6]_i_1_n_0 |                5 |              5 |         1.00 |
+|  targetClk_BUFG                | stack/mem[200][6]_i_2_n_0       | stack/mem[200][6]_i_1_n_0 |                1 |              5 |         5.00 |
+|  targetClk_BUFG                | stack/mem[122][6]_i_2_n_0       | stack/mem[122][6]_i_1_n_0 |                2 |              5 |         2.50 |
+|  targetClk_BUFG                | stack/mem[148][6]_i_2_n_0       | stack/mem[148][6]_i_1_n_0 |                2 |              5 |         2.50 |
+|  targetClk_BUFG                | stack/mem[120][6]_i_2_n_0       | stack/mem[120][6]_i_1_n_0 |                2 |              5 |         2.50 |
+|  targetClk_BUFG                | stack/mem[210][6]_i_2_n_0       | stack/mem[210][6]_i_1_n_0 |                3 |              5 |         1.67 |
+|  targetClk_BUFG                | stack/mem[251][7]_i_2_n_0       | stack/mem[251][7]_i_1_n_0 |                1 |              5 |         5.00 |
+|  targetClk_BUFG                | stack/mem[234][6]_i_2_n_0       | stack/mem[234][6]_i_1_n_0 |                3 |              5 |         1.67 |
+|  targetClk_BUFG                | stack/mem[224][6]_i_2_n_0       | stack/mem[224][6]_i_1_n_0 |                1 |              5 |         5.00 |
+|  targetClk_BUFG                | stack/mem[112][6]_i_2_n_0       | stack/mem[112][6]_i_1_n_0 |                1 |              5 |         5.00 |
+|  targetClk_BUFG                | stack/mem[154][6]_i_2_n_0       | stack/mem[154][6]_i_1_n_0 |                3 |              5 |         1.67 |
+|  targetClk_BUFG                | stack/mem[235][6]_i_2_n_0       | stack/mem[235][6]_i_1_n_0 |                4 |              5 |         1.25 |
+|  targetClk_BUFG                | stack/mem[22][5]_i_2_n_0        | stack/mem[22][5]_i_1_n_0  |                1 |              5 |         5.00 |
+|  targetClk_BUFG                | stack/mem[226][6]_i_2_n_0       | stack/mem[226][6]_i_1_n_0 |                2 |              5 |         2.50 |
+|  targetClk_BUFG                | stack/mem[231][7]_i_2_n_0       | stack/mem[231][7]_i_1_n_0 |                1 |              5 |         5.00 |
+|  targetClk_BUFG                | stack/mem[60][6]_i_2_n_0        | stack/mem[60][6]_i_1_n_0  |                3 |              6 |         2.00 |
+|  targetClk_BUFG                | stack/mem[59][6]_i_2_n_0        | stack/mem[59][6]_i_1_n_0  |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[55][6]_i_2_n_0        | stack/mem[55][6]_i_1_n_0  |                4 |              6 |         1.50 |
+|  targetClk_BUFG                |                                 | stack/mem[12][6]_i_1_n_0  |                4 |              6 |         1.50 |
+|  targetClk_BUFG                | stack/mem[57][6]_i_2_n_0        | stack/mem[57][6]_i_1_n_0  |                3 |              6 |         2.00 |
+|  targetClk_BUFG                | stack/mem[73][6]_i_2_n_0        | stack/mem[73][6]_i_1_n_0  |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[6][6]_i_2_n_0         | stack/mem[6][6]_i_1_n_0   |                4 |              6 |         1.50 |
+|  targetClk_BUFG                | stack/mem[79][6]_i_2_n_0        | stack/mem[79][6]_i_1_n_0  |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[7][6]_i_2_n_0         | stack/mem[7][6]_i_1_n_0   |                3 |              6 |         2.00 |
+|  targetClk_BUFG                | stack/mem[80][6]_i_2_n_0        | stack/mem[80][6]_i_1_n_0  |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[74][6]_i_2_n_0        | stack/mem[74][6]_i_1_n_0  |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[78][6]_i_2_n_0        | stack/mem[78][6]_i_1_n_0  |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[93][6]_i_2_n_0        | stack/mem[93][6]_i_1_n_0  |                3 |              6 |         2.00 |
+|  targetClk_BUFG                | stack/mem[8][6]_i_2_n_0         | stack/mem[8][6]_i_1_n_0   |                3 |              6 |         2.00 |
+|  targetClk_BUFG                | stack/mem[9][6]_i_2_n_0         | stack/mem[9][6]_i_1_n_0   |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[96][6]_i_2_n_0        | stack/mem[96][6]_i_1_n_0  |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[97][6]_i_2_n_0        | stack/mem[97][6]_i_1_n_0  |                1 |              6 |         6.00 |
+|  targetClk_BUFG                |                                 | stack/mem[20][6]_i_1_n_0  |                2 |              6 |         3.00 |
+|  targetClk_BUFG                |                                 | stack/mem[28][6]_i_1_n_0  |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[21][6]_i_2_n_0        | stack/mem[21][6]_i_1_n_0  |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[218][6]_i_2_n_0       | stack/mem[218][6]_i_1_n_0 |                4 |              6 |         1.50 |
+|  targetClk_BUFG                | stack/mem[221][6]_i_2_n_0       | stack/mem[221][6]_i_1_n_0 |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[222][6]_i_2_n_0       | stack/mem[222][6]_i_1_n_0 |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[220][6]_i_2_n_0       | stack/mem[220][6]_i_1_n_0 |                3 |              6 |         2.00 |
+|  targetClk_BUFG                | stack/mem[100][6]_i_2_n_0       | stack/mem[100][6]_i_1_n_0 |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[103][6]_i_2_n_0       | stack/mem[103][6]_i_1_n_0 |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[104][6]_i_2_n_0       | stack/mem[104][6]_i_1_n_0 |                3 |              6 |         2.00 |
+|  targetClk_BUFG                | stack/mem[0][6]_i_2_n_0         | stack/mem[0][6]_i_1_n_0   |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[107][6]_i_2_n_0       | stack/mem[107][6]_i_1_n_0 |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[101][6]_i_2_n_0       | stack/mem[101][6]_i_1_n_0 |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[105][6]_i_2_n_0       | stack/mem[105][6]_i_1_n_0 |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[111][6]_i_2_n_0       | stack/mem[111][6]_i_1_n_0 |                3 |              6 |         2.00 |
+|  targetClk_BUFG                | stack/mem[113][6]_i_2_n_0       | stack/mem[113][6]_i_1_n_0 |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[116][6]_i_2_n_0       | stack/mem[116][6]_i_1_n_0 |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[10][6]_i_2_n_0        | stack/mem[10][6]_i_1_n_0  |                4 |              6 |         1.50 |
+|  targetClk_BUFG                | stack/mem[117][6]_i_2_n_0       | stack/mem[117][6]_i_1_n_0 |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[108][6]_i_2_n_0       | stack/mem[108][6]_i_1_n_0 |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[126][6]_i_2_n_0       | stack/mem[126][6]_i_1_n_0 |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[119][6]_i_2_n_0       | stack/mem[119][6]_i_1_n_0 |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[125][6]_i_2_n_0       | stack/mem[125][6]_i_1_n_0 |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[121][6]_i_2_n_0       | stack/mem[121][6]_i_1_n_0 |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[133][6]_i_2_n_0       | stack/mem[133][6]_i_1_n_0 |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[132][6]_i_2_n_0       | stack/mem[132][6]_i_1_n_0 |                4 |              6 |         1.50 |
+|  targetClk_BUFG                | stack/mem[129][6]_i_2_n_0       | stack/mem[129][6]_i_1_n_0 |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[209][6]_i_2_n_0       | stack/mem[209][6]_i_1_n_0 |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[135][7]_i_2_n_0       | stack/mem[135][7]_i_1_n_0 |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[13][6]_i_2_n_0        | stack/mem[13][6]_i_1_n_0  |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[152][6]_i_2_n_0       | stack/mem[152][6]_i_1_n_0 |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[153][6]_i_2_n_0       | stack/mem[153][6]_i_1_n_0 |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[145][6]_i_2_n_0       | stack/mem[145][6]_i_1_n_0 |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[149][6]_i_2_n_0       | stack/mem[149][6]_i_1_n_0 |                5 |              6 |         1.20 |
+|  targetClk_BUFG                | stack/mem[147][6]_i_2_n_0       | stack/mem[147][6]_i_1_n_0 |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[14][6]_i_2_n_0        | stack/mem[14][6]_i_1_n_0  |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[144][6]_i_2_n_0       | stack/mem[144][6]_i_1_n_0 |                3 |              6 |         2.00 |
+|  targetClk_BUFG                | stack/mem[146][6]_i_2_n_0       | stack/mem[146][6]_i_1_n_0 |                3 |              6 |         2.00 |
+|  targetClk_BUFG                | stack/mem[150][6]_i_2_n_0       | stack/mem[150][6]_i_1_n_0 |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[155][6]_i_2_n_0       | stack/mem[155][6]_i_1_n_0 |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[156][6]_i_2_n_0       | stack/mem[156][6]_i_1_n_0 |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[160][6]_i_2_n_0       | stack/mem[160][6]_i_1_n_0 |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[15][6]_i_2_n_0        | stack/mem[15][6]_i_1_n_0  |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[171][6]_i_2_n_0       | stack/mem[171][6]_i_1_n_0 |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[162][6]_i_2_n_0       | stack/mem[162][6]_i_1_n_0 |                3 |              6 |         2.00 |
+|  targetClk_BUFG                | stack/mem[165][6]_i_2_n_0       | stack/mem[165][6]_i_1_n_0 |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[168][6]_i_2_n_0       | stack/mem[168][6]_i_1_n_0 |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[167][6]_i_2_n_0       | stack/mem[167][6]_i_1_n_0 |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[169][6]_i_2_n_0       | stack/mem[169][6]_i_1_n_0 |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[166][6]_i_2_n_0       | stack/mem[166][6]_i_1_n_0 |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[16][6]_i_2_n_0        | stack/mem[16][6]_i_1_n_0  |                3 |              6 |         2.00 |
+|  targetClk_BUFG                | stack/mem[170][6]_i_2_n_0       | stack/mem[170][6]_i_1_n_0 |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[219][6]_i_2_n_0       | stack/mem[219][6]_i_1_n_0 |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[17][6]_i_2_n_0        | stack/mem[17][6]_i_1_n_0  |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[175][7]_i_2_n_0       | stack/mem[175][7]_i_1_n_0 |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[174][6]_i_2_n_0       | stack/mem[174][6]_i_1_n_0 |                4 |              6 |         1.50 |
+|  targetClk_BUFG                | stack/mem[172][6]_i_2_n_0       | stack/mem[172][6]_i_1_n_0 |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[191][6]_i_2_n_0       | stack/mem[191][6]_i_1_n_0 |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[18][6]_i_2_n_0        | stack/mem[18][6]_i_1_n_0  |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[190][7]_i_2_n_0       | stack/mem[190][7]_i_1_n_0 |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[193][6]_i_2_n_0       | stack/mem[193][6]_i_1_n_0 |                3 |              6 |         2.00 |
+|  targetClk_BUFG                | stack/mem[197][6]_i_2_n_0       | stack/mem[197][6]_i_1_n_0 |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[199][6]_i_2_n_0       | stack/mem[199][6]_i_1_n_0 |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[195][6]_i_2_n_0       | stack/mem[195][6]_i_1_n_0 |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[19][6]_i_2_n_0        | stack/mem[19][6]_i_1_n_0  |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[196][6]_i_2_n_0       | stack/mem[196][6]_i_1_n_0 |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[198][6]_i_2_n_0       | stack/mem[198][6]_i_1_n_0 |                3 |              6 |         2.00 |
+|  targetClk_BUFG                | stack/mem[192][6]_i_2_n_0       | stack/mem[192][6]_i_1_n_0 |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[1][6]_i_2_n_0         | stack/mem[1][6]_i_1_n_0   |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[205][6]_i_2_n_0       | stack/mem[205][6]_i_1_n_0 |                3 |              6 |         2.00 |
+|  targetClk_BUFG                | stack/mem[204][6]_i_2_n_0       | stack/mem[204][6]_i_1_n_0 |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[201][6]_i_2_n_0       | stack/mem[201][6]_i_1_n_0 |                3 |              6 |         2.00 |
+|  targetClk_BUFG                | stack/mem[202][6]_i_2_n_0       | stack/mem[202][6]_i_1_n_0 |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[203][6]_i_2_n_0       | stack/mem[203][6]_i_1_n_0 |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[207][6]_i_2_n_0       | stack/mem[207][6]_i_1_n_0 |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[211][6]_i_2_n_0       | stack/mem[211][6]_i_1_n_0 |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[212][6]_i_2_n_0       | stack/mem[212][6]_i_1_n_0 |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[216][6]_i_2_n_0       | stack/mem[216][6]_i_1_n_0 |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[217][6]_i_2_n_0       | stack/mem[217][6]_i_1_n_0 |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[230][7]_i_2_n_0       | stack/mem[230][7]_i_1_n_0 |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[23][6]_i_2_n_0        | stack/mem[23][6]_i_1_n_0  |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[246][7]_i_2_n_0       | stack/mem[246][7]_i_1_n_0 |                4 |              6 |         1.50 |
+|  targetClk_BUFG                | stack/mem[240][6]_i_2_n_0       | stack/mem[240][6]_i_1_n_0 |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[243][6]_i_2_n_0       | stack/mem[243][6]_i_1_n_0 |                4 |              6 |         1.50 |
+|  targetClk_BUFG                | stack/mem[27][6]_i_2_n_0        | stack/mem[27][6]_i_1_n_0  |                4 |              6 |         1.50 |
+|  targetClk_BUFG                | stack/mem[2][6]_i_2_n_0         | stack/mem[2][6]_i_1_n_0   |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[29][6]_i_2_n_0        | stack/mem[29][6]_i_1_n_0  |                3 |              6 |         2.00 |
+|  targetClk_BUFG                | stack/mem[26][6]_i_2_n_0        | stack/mem[26][6]_i_1_n_0  |                3 |              6 |         2.00 |
+|  targetClk_BUFG                | stack/mem[254][6]_i_2_n_0       | stack/mem[254][6]_i_1_n_0 |                5 |              6 |         1.20 |
+|  targetClk_BUFG                | stack/mem[25][6]_i_2_n_0        | stack/mem[25][6]_i_1_n_0  |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[54][6]_i_2_n_0        | stack/mem[54][6]_i_1_n_0  |                1 |              6 |         6.00 |
+|  targetClk_BUFG                | stack/mem[53][6]_i_2_n_0        | stack/mem[53][6]_i_1_n_0  |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[48][6]_i_2_n_0        | stack/mem[48][6]_i_1_n_0  |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[4][6]_i_2_n_0         | stack/mem[4][6]_i_1_n_0   |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[50][6]_i_2_n_0        | stack/mem[50][6]_i_1_n_0  |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[49][6]_i_2_n_0        | stack/mem[49][6]_i_1_n_0  |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[61][6]_i_2_n_0        | stack/mem[61][6]_i_1_n_0  |                3 |              6 |         2.00 |
+|  targetClk_BUFG                | stack/mem[64][6]_i_2_n_0        | stack/mem[64][6]_i_1_n_0  |                2 |              6 |         3.00 |
+|  targetClk_BUFG                | stack/mem[56][6]_i_2_n_0        | stack/mem[56][6]_i_1_n_0  |                3 |              6 |         2.00 |
+|  targetClk_BUFG                | stack/mem[5][6]_i_2_n_0         | stack/mem[5][6]_i_1_n_0   |                3 |              6 |         2.00 |
+|  targetClk_BUFG                | stack/mem[32][7]_i_2_n_0        | stack/mem[32][7]_i_1_n_0  |                3 |              7 |         2.33 |
+|  targetClk_BUFG                | stack/mem[68][7]_i_2_n_0        | stack/mem[68][7]_i_1_n_0  |                1 |              7 |         7.00 |
+|  targetClk_BUFG                | stack/mem[245][7]_i_2_n_0       | stack/mem[245][7]_i_1_n_0 |                2 |              7 |         3.50 |
+|  targetClk_BUFG                | stack/mem[247][7]_i_2_n_0       | stack/mem[247][7]_i_1_n_0 |                3 |              7 |         2.33 |
+|  targetClk_BUFG                | stack/mem[75][7]_i_2_n_0        | stack/mem[75][7]_i_1_n_0  |                2 |              7 |         3.50 |
+|  targetClk_BUFG                | stack/mem[76][7]_i_2_n_0        | stack/mem[76][7]_i_1_n_0  |                3 |              7 |         2.33 |
+|  targetClk_BUFG                | stack/mem[81][7]_i_2_n_0        | stack/mem[81][7]_i_1_n_0  |                1 |              7 |         7.00 |
+|  targetClk_BUFG                | stack/mem[185][7]_i_2_n_0       | stack/mem[185][7]_i_1_n_0 |                2 |              7 |         3.50 |
+|  targetClk_BUFG                | stack/mem[242][7]_i_2_n_0       | stack/mem[242][7]_i_1_n_0 |                1 |              7 |         7.00 |
+|  targetClk_BUFG                | stack/mem[184][7]_i_2_n_0       | stack/mem[184][7]_i_1_n_0 |                2 |              7 |         3.50 |
+|  targetClk_BUFG                | stack/mem[88][7]_i_2_n_0        | stack/mem[88][7]_i_1_n_0  |                2 |              7 |         3.50 |
+|  targetClk_BUFG                | stack/mem[237][7]_i_2_n_0       | stack/mem[237][7]_i_1_n_0 |                1 |              7 |         7.00 |
+|  targetClk_BUFG                | stack/mem[92][7]_i_2_n_0        | stack/mem[92][7]_i_1_n_0  |                3 |              7 |         2.33 |
+|  targetClk_BUFG                | stack/mem[140][7]_i_2_n_0       | stack/mem[140][7]_i_1_n_0 |                3 |              7 |         2.33 |
+|  targetClk_BUFG                | stack/mem[84][7]_i_2_n_0        | stack/mem[84][7]_i_1_n_0  |                1 |              7 |         7.00 |
+|  targetClk_BUFG                | stack/mem[94][7]_i_2_n_0        | stack/mem[94][7]_i_1_n_0  |                4 |              7 |         1.75 |
+|  targetClk_BUFG                | stack/mem[137][7]_i_2_n_0       | stack/mem[137][7]_i_1_n_0 |                3 |              7 |         2.33 |
+|  targetClk_BUFG                | stack/mem[250][7]_i_2_n_0       | stack/mem[250][7]_i_1_n_0 |                2 |              7 |         3.50 |
+|  targetClk_BUFG                | stack/mem[90][7]_i_2_n_0        | stack/mem[90][7]_i_1_n_0  |                2 |              7 |         3.50 |
+|  targetClk_BUFG                | stack/mem[183][7]_i_2_n_0       | stack/mem[183][7]_i_1_n_0 |                4 |              7 |         1.75 |
+|  targetClk_BUFG                | stack/mem[223][7]_i_2_n_0       | stack/mem[223][7]_i_1_n_0 |                2 |              7 |         3.50 |
+|  targetClk_BUFG                | stack/mem[139][7]_i_2_n_0       | stack/mem[139][7]_i_1_n_0 |                5 |              7 |         1.40 |
+|  targetClk_BUFG                | stack/mem[86][7]_i_2_n_0        | stack/mem[86][7]_i_1_n_0  |                2 |              7 |         3.50 |
+|  targetClk_BUFG                | stack/mem[87][7]_i_2_n_0        | stack/mem[87][7]_i_1_n_0  |                1 |              7 |         7.00 |
+|  targetClk_BUFG                | stack/mem[35][7]_i_2_n_0        | stack/mem[35][7]_i_1_n_0  |                2 |              7 |         3.50 |
+|  targetClk_BUFG                | stack/mem[34][7]_i_2_n_0        | stack/mem[34][7]_i_1_n_0  |                3 |              7 |         2.33 |
+|  targetClk_BUFG                | stack/mem[3][7]_i_2_n_0         | stack/mem[3][7]_i_1_n_0   |                3 |              7 |         2.33 |
+|  targetClk_BUFG                | stack/mem[42][7]_i_2_n_0        | stack/mem[42][7]_i_1_n_0  |                2 |              7 |         3.50 |
+|  targetClk_BUFG                | stack/mem[41][7]_i_2_n_0        | stack/mem[41][7]_i_1_n_0  |                2 |              7 |         3.50 |
+|  targetClk_BUFG                | stack/mem[43][7]_i_2_n_0        | stack/mem[43][7]_i_1_n_0  |                1 |              7 |         7.00 |
+|  targetClk_BUFG                | stack/mem[44][7]_i_2_n_0        | stack/mem[44][7]_i_1_n_0  |                3 |              7 |         2.33 |
+|  targetClk_BUFG                | stack/mem[39][7]_i_2_n_0        | stack/mem[39][7]_i_1_n_0  |                1 |              7 |         7.00 |
+|  targetClk_BUFG                | stack/mem[89][7]_i_2_n_0        | stack/mem[89][7]_i_1_n_0  |                2 |              7 |         3.50 |
+|  targetClk_BUFG                | stack/mem[40][7]_i_2_n_0        | stack/mem[40][7]_i_1_n_0  |                3 |              7 |         2.33 |
+|  targetClk_BUFG                | stack/mem[45][7]_i_2_n_0        | stack/mem[45][7]_i_1_n_0  |                3 |              7 |         2.33 |
+|  targetClk_BUFG                | stack/mem[115][7]_i_2_n_0       | stack/mem[115][7]_i_1_n_0 |                4 |              7 |         1.75 |
+|  targetClk_BUFG                | stack/mem[91][7]_i_2_n_0        | stack/mem[91][7]_i_1_n_0  |                3 |              7 |         2.33 |
+|  targetClk_BUFG                | stack/mem[178][7]_i_2_n_0       | stack/mem[178][7]_i_1_n_0 |                4 |              7 |         1.75 |
+|  targetClk_BUFG                | stack/mem[176][7]_i_2_n_0       | stack/mem[176][7]_i_1_n_0 |                2 |              7 |         3.50 |
+|  targetClk_BUFG                | stack/mem[189][7]_i_2_n_0       | stack/mem[189][7]_i_1_n_0 |                1 |              7 |         7.00 |
+|  targetClk_BUFG                | stack/mem[252][7]_i_2_n_0       | stack/mem[252][7]_i_1_n_0 |                2 |              7 |         3.50 |
+|  targetClk_BUFG                | stack/mem[181][7]_i_2_n_0       | stack/mem[181][7]_i_1_n_0 |                3 |              7 |         2.33 |
+|  targetClk_BUFG                | stack/mem[229][7]_i_2_n_0       | stack/mem[229][7]_i_1_n_0 |                2 |              7 |         3.50 |
+|  targetClk_BUFG                | stack/mem[63][7]_i_2_n_0        | stack/mem[63][7]_i_1_n_0  |                3 |              7 |         2.33 |
+|  targetClk_BUFG                | stack/mem[182][7]_i_2_n_0       | stack/mem[182][7]_i_1_n_0 |                1 |              7 |         7.00 |
+|  targetClk_BUFG                | stack/mem[85][7]_i_2_n_0        | stack/mem[85][7]_i_1_n_0  |                2 |              7 |         3.50 |
+|  targetClk_BUFG                | stack/mem[232][7]_i_2_n_0       | stack/mem[232][7]_i_1_n_0 |                4 |              7 |         1.75 |
+|  targetClk_BUFG                | stack/mem[65][7]_i_2_n_0        | stack/mem[65][7]_i_1_n_0  |                2 |              7 |         3.50 |
+|  targetClk_BUFG                | stack/mem[227][7]_i_2_n_0       | stack/mem[227][7]_i_1_n_0 |                1 |              7 |         7.00 |
+|  targetClk_BUFG                | stack/mem[233][7]_i_2_n_0       | stack/mem[233][7]_i_1_n_0 |                4 |              7 |         1.75 |
+|  targetClk_BUFG                | stack/mem[225][7]_i_2_n_0       | stack/mem[225][7]_i_1_n_0 |                3 |              7 |         2.33 |
+|  targetClk_BUFG                | stack/mem[136][7]_i_2_n_0       | stack/mem[136][7]_i_1_n_0 |                4 |              7 |         1.75 |
+|  targetClk_BUFG                | stack/mem[244][7]_i_2_n_0       | stack/mem[244][7]_i_1_n_0 |                1 |              7 |         7.00 |
+|  targetClk_BUFG                | stack/mem[66][7]_i_2_n_0        | stack/mem[66][7]_i_1_n_0  |                5 |              7 |         1.40 |
+|  targetClk_BUFG                | stack/mem[138][7]_i_2_n_0       | stack/mem[138][7]_i_1_n_0 |                3 |              7 |         2.33 |
+|  targetClk_BUFG                | stack/mem[70][7]_i_2_n_0        | stack/mem[70][7]_i_1_n_0  |                3 |              7 |         2.33 |
+|  targetClk_BUFG                | stack/mem[69][7]_i_2_n_0        | stack/mem[69][7]_i_1_n_0  |                3 |              7 |         2.33 |
+|  targetClk_BUFG                | stack/mem[248][7]_i_2_n_0       | stack/mem[248][7]_i_1_n_0 |                3 |              7 |         2.33 |
+|  targetClk_BUFG                | stack/mem[186][7]_i_2_n_0       | stack/mem[186][7]_i_1_n_0 |                5 |              7 |         1.40 |
+|  targetClk_BUFG                |                                 | stack/addr[7]_i_1_n_0     |                3 |              8 |         2.67 |
+|  targetClk_BUFG                |                                 | stack/mem[130][7]_i_1_n_0 |                2 |              8 |         4.00 |
+|  targetClk_BUFG                |                                 | stack/mem[128][7]_i_1_n_0 |                2 |              8 |         4.00 |
+|  targetClk_BUFG                |                                 | stack/mem[143][7]_i_1_n_0 |                2 |              8 |         4.00 |
+|  targetClk_BUFG                |                                 | stack/mem[141][7]_i_1_n_0 |                3 |              8 |         2.67 |
+|  targetClk_BUFG                |                                 | stack/mem[134][7]_i_1_n_0 |                2 |              8 |         4.00 |
+|  targetClk_BUFG                |                                 | stack/mem[151][7]_i_1_n_0 |                2 |              8 |         4.00 |
+|  targetClk_BUFG                |                                 | stack/mem[161][7]_i_1_n_0 |                3 |              8 |         2.67 |
+|  targetClk_BUFG                |                                 | stack/mem[157][7]_i_1_n_0 |                5 |              8 |         1.60 |
+|  targetClk_BUFG                |                                 | stack/mem[158][7]_i_1_n_0 |                2 |              8 |         4.00 |
+|  targetClk_BUFG                |                                 | stack/mem[173][7]_i_1_n_0 |                3 |              8 |         2.67 |
+|  targetClk_BUFG                |                                 | stack/mem[179][7]_i_1_n_0 |                3 |              8 |         2.67 |
+|  targetClk_BUFG                |                                 | stack/mem[187][7]_i_1_n_0 |                3 |              8 |         2.67 |
+|  targetClk_BUFG                |                                 | stack/mem[180][7]_i_1_n_0 |                3 |              8 |         2.67 |
+|  targetClk_BUFG                | stack/mem[255][7]_i_1_n_0       |                           |                2 |              8 |         4.00 |
+|  targetClk_BUFG                |                                 | stack/mem[71][7]_i_1_n_0  |                3 |              8 |         2.67 |
+|  targetClk_BUFG                |                                 | stack/mem[51][7]_i_1_n_0  |                4 |              8 |         2.00 |
+|  targetClk_BUFG                |                                 | stack/mem[46][7]_i_1_n_0  |                5 |              8 |         1.60 |
+|  targetClk_BUFG                |                                 | stack/mem[36][7]_i_1_n_0  |                3 |              8 |         2.67 |
+|  targetClk_BUFG                | stack/dout[7]_i_1_n_0           |                           |                5 |              8 |         1.60 |
+|  targetClk_BUFG                |                                 | stack/mem[177][7]_i_1_n_0 |                3 |              8 |         2.67 |
+|  targetClk_BUFG                |                                 | stack/mem[31][7]_i_1_n_0  |                2 |              8 |         4.00 |
+|  targetClk_BUFG                |                                 | stack/mem[249][7]_i_1_n_0 |                4 |              8 |         2.00 |
+|  targetClk_BUFG                |                                 | stack/mem[164][7]_i_1_n_0 |                2 |              8 |         4.00 |
+|  targetClk_BUFG                |                                 | stack/mem[236][7]_i_1_n_0 |                2 |              8 |         4.00 |
+|  targetClk_BUFG                |                                 | stack/mem[239][7]_i_1_n_0 |                3 |              8 |         2.67 |
+|  targetClk_BUFG                |                                 | stack/mem[30][7]_i_1_n_0  |                4 |              8 |         2.00 |
+|  targetClk_BUFG                |                                 | stack/mem[238][7]_i_1_n_0 |                2 |              8 |         4.00 |
+|  targetClk_BUFG                |                                 | stack/mem[241][7]_i_1_n_0 |                3 |              8 |         2.67 |
+|  targetClk_BUFG                |                                 | stack/mem[215][7]_i_1_n_0 |                2 |              8 |         4.00 |
+|  targetClk_BUFG                |                                 |                           |              239 |            519 |         2.17 |
++--------------------------------+---------------------------------+---------------------------+------------------+----------------+--------------+
+
+

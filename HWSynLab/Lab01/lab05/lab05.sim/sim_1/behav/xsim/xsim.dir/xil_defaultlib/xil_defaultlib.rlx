@@ -1,0 +1,15 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+C:/Awork/y3s1/HWSynLab/Lab01/lab05/lab05.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+C:/Awork/y3s1/HWSynLab/Lab01/lab05/lab05.srcs/sim_1/imports/sim_1/tester.v,1728974220,verilog,,,,tester,,,,,,,,
+C:/Awork/y3s1/HWSynLab/Lab01/lab05/lab05.srcs/sim_1/imports/sim_1/tester2.v,1728976940,verilog,,,,tester2,,,,,,,,
+C:/Awork/y3s1/HWSynLab/Lab01/lab05/lab05.srcs/sources_1/imports/sources_1/adder.v,1728369606,verilog,,C:/Awork/y3s1/HWSynLab/Lab01/lab05/lab05.srcs/sources_1/imports/sources_1/alu.v,,adder,,,,,,,,
+C:/Awork/y3s1/HWSynLab/Lab01/lab05/lab05.srcs/sources_1/imports/sources_1/alu.v,1728369606,verilog,,C:/Awork/y3s1/HWSynLab/Lab01/lab05/lab05.srcs/sources_1/imports/sources_1/control.v,,alu,,,,,,,,
+C:/Awork/y3s1/HWSynLab/Lab01/lab05/lab05.srcs/sources_1/imports/sources_1/control.v,1728369606,verilog,,C:/Awork/y3s1/HWSynLab/Lab01/lab05/lab05.srcs/sources_1/imports/sources_1/extender.v,,control,,,,,,,,
+C:/Awork/y3s1/HWSynLab/Lab01/lab05/lab05.srcs/sources_1/imports/sources_1/extender.v,1728369606,verilog,,C:/Awork/y3s1/HWSynLab/Lab01/lab05/lab05.srcs/sources_1/imports/sources_1/mux.v,,extender,,,,,,,,
+C:/Awork/y3s1/HWSynLab/Lab01/lab05/lab05.srcs/sources_1/imports/sources_1/mux.v,1728369606,verilog,,C:/Awork/y3s1/HWSynLab/Lab01/lab05/lab05.srcs/sources_1/imports/sources_1/nanocpu.v,,mux2_1,,,,,,,,
+C:/Awork/y3s1/HWSynLab/Lab01/lab05/lab05.srcs/sources_1/imports/sources_1/nanocpu.v,1728369606,verilog,,C:/Awork/y3s1/HWSynLab/Lab01/lab05/lab05.srcs/sources_1/imports/sources_1/oldmemory.v,,nanocpu,,,,,,,,
+C:/Awork/y3s1/HWSynLab/Lab01/lab05/lab05.srcs/sources_1/imports/sources_1/oldmemory.v,1728369606,verilog,,C:/Awork/y3s1/HWSynLab/Lab01/lab05/lab05.srcs/sources_1/imports/sources_1/regfile.v,,oldmemory,,,,,,,,
+C:/Awork/y3s1/HWSynLab/Lab01/lab05/lab05.srcs/sources_1/imports/sources_1/regfile.v,1728369606,verilog,,C:/Awork/y3s1/HWSynLab/Lab01/lab05/lab05.srcs/sim_1/imports/sim_1/tester2.v,,regfile,,,,,,,,

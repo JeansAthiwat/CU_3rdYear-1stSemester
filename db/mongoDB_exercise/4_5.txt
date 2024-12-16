@@ -1,0 +1,46 @@
+db.getCollection('customer').aggregate(
+  [
+    {
+      $project: {
+        customer_ampur: 0,
+        customer_province: 0,
+        customer_zipcode: 0,
+        _id: 0
+      }
+    },
+    {
+      $lookup: {
+        from: 'orders_w_lines',
+        localField: 'customer_id',
+        foreignField: 'customer_id',
+        as: 'result'
+      }
+    },
+    { $unwind: { path: '$result' } },
+    {
+      $group: {
+        _id: '$customer_id',
+        order_count: { $sum: 1 }
+      }
+    },
+    {
+      $lookup: {
+        from: 'customer',
+        localField: '_id',
+        foreignField: 'customer_id',
+        as: 'result'
+      }
+    },
+    { $unwind: { path: '$result' } },
+    {
+      $project: {
+        customer_id: '$result.customer_id',
+        customer_name: '$result.customer_name',
+        num_orders: '$order_count',
+        _id: 0
+      }
+    },
+    { $sort: { num_orders: -1 } }
+  ],
+  { maxTimeMS: 60000, allowDiskUse: true }
+);

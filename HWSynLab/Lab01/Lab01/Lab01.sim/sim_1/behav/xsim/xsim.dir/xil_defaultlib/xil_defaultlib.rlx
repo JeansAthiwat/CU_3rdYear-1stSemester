@@ -1,0 +1,11 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+C:/Awork/y3s1/HWSynLab/Lab01/Lab01/Lab01.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+C:/Awork/y3s1/HWSynLab/Lab01/Lab01/Lab01.srcs/sim_1/new/testDFlipFlop.v,1724140593,verilog,,C:/Awork/y3s1/HWSynLab/Lab01/Lab01/Lab01.srcs/sim_1/new/testShift.v,,testDFlipFlop,,,,,,,,
+C:/Awork/y3s1/HWSynLab/Lab01/Lab01/Lab01.srcs/sim_1/new/testShift.v,1724400754,verilog,,,,testShift,,,,,,,,
+C:/Awork/y3s1/HWSynLab/Lab01/Lab01/Lab01.srcs/sim_1/new/tester.v,1724141994,verilog,,C:/Awork/y3s1/HWSynLab/Lab01/Lab01/Lab01.srcs/sim_1/new/testDFlipFlop.v,,tester,,,,,,,,
+C:/Awork/y3s1/HWSynLab/Lab01/Lab01/Lab01.srcs/sources_1/new/DFlipFlop.v,1724140335,verilog,,C:/Awork/y3s1/HWSynLab/Lab01/Lab01/Lab01.srcs/sources_1/new/shiftA.v,,DFlipFlop,,,,,,,,
+C:/Awork/y3s1/HWSynLab/Lab01/Lab01/Lab01.srcs/sources_1/new/fullAdder.v,1724138577,verilog,,C:/Awork/y3s1/HWSynLab/Lab01/Lab01/Lab01.srcs/sources_1/new/DFlipFlop.v,,fullAdder,,,,,,,,
+C:/Awork/y3s1/HWSynLab/Lab01/Lab01/Lab01.srcs/sources_1/new/shiftA.v,1724400708,verilog,,C:/Awork/y3s1/HWSynLab/Lab01/Lab01/Lab01.srcs/sim_1/new/tester.v,,shiftA;shiftB;shiftN,,,,,,,,

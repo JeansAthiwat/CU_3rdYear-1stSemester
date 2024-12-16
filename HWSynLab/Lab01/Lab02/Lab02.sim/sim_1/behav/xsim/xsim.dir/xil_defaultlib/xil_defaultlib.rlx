@@ -1,0 +1,9 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+C:/Awork/y3s1/HWSynLab/Lab01/Lab02/Lab02.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+C:/Awork/y3s1/HWSynLab/Lab01/Lab02/Lab02.srcs/sources_1/new/clockDiv.v,1724729263,verilog,,C:/Awork/y3s1/HWSynLab/Lab01/Lab02/Lab02.srcs/sources_1/new/quadSevenSeg.v,,clockDiv,,,,,,,,
+C:/Awork/y3s1/HWSynLab/Lab01/Lab02/Lab02.srcs/sources_1/new/quadSevenSeg.v,1724729957,verilog,,C:/Awork/y3s1/HWSynLab/Lab01/Lab02/Lab02.srcs/sources_1/new/segmentDecoder.v,,quadSevenSeg,,,,,,,,
+C:/Awork/y3s1/HWSynLab/Lab01/Lab02/Lab02.srcs/sources_1/new/segmentDecoder.v,1724729143,verilog,,C:/Awork/y3s1/HWSynLab/Lab01/Lab02/Lab02.srcs/sources_1/new/system.v,,hexTo7Segment,,,,,,,,
+C:/Awork/y3s1/HWSynLab/Lab01/Lab02/Lab02.srcs/sources_1/new/system.v,1724730434,verilog,,,,system,,,,,,,,
